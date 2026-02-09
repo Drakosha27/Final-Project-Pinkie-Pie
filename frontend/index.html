@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pinkie Pie Bakery</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <div class="brand-mark">PP</div>
+    <div>
+      <div class="brand-title">Pinkie Pie Bakery</div>
+      <div class="brand-subtitle">Sweet moments made with love</div>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html" id="menuLink" class="hidden">Menu</a>
+    <a href="orders.html" id="ordersLink" class="hidden">My Orders</a>
+    <a href="admin.html" id="adminLink" class="hidden">Admin Panel</a>
+    <a href="favorites.html">Favorites</a>
+    <a href="profile.html">My Profile</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+<a href="login.html" id="loginLink">Login</a>
+    <a href="register.html" id="registerLink">Register</a>
+    <button class="link-btn hidden" id="logoutBtn">Logout</button>
+  </nav>
+  <div class="header-right">
+    <div class="auth-pill hidden" id="authPill">
+      <span class="auth-email" id="authEmail"></span>
+      <span class="auth-role" id="authRole"></span>
+    </div>
+    <button class="link-btn" id="themeToggle" type="button">☀️</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Celebrate every day with handcrafted desserts.</h1>
+      <p>Browse our fresh menu, place an order in seconds, and pick up your favorites.</p>
+      <div class="hero-actions">
+        <a class="btn" href="menu.html">Order Now</a>
+        <a class="btn ghost" href="register.html">Create Account</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-title">Today’s favorites</div>
+      <ul class="hero-list">
+        <li>Strawberry cloud cake</li>
+        <li>Caramel éclairs</li>
+        <li>Raspberry macarons</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="feature-strip">
+    <div class="feature-card">
+      <h3>Daily special</h3>
+      <p id="dailySpecial" class="muted">Loading today’s favorite…</p>
+      <div class="progress">
+        <span></span>
+      </div>
+    </div>
+    <div class="feature-card">
+      <h3>Freshness guarantee</h3>
+      <p class="muted">Baked this morning, packed this hour, ready to brighten your day.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Community love</h3>
+      <p class="muted">“Always soft, always perfect. The pistachio roll is unbeatable.”</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-note">Baked fresh daily for your sweetest moments.</div>
+  <div class="footer-meta">© 2026 Diana. All rights reserved.</div>
+</footer>
+
+<div id="flash" class="flash"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+

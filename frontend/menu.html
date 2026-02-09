@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu - Pinkie Pie</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <div class="brand-mark">PP</div>
+    <div>
+      <div class="brand-title">Pinkie Pie Bakery</div>
+      <div class="brand-subtitle">Menu</div>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html" id="menuLink" class="hidden">Menu</a>
+    <a href="orders.html" id="ordersLink" class="hidden">My Orders</a>
+    <a href="admin.html" id="adminLink" class="hidden">Admin Panel</a>
+    <a href="favorites.html">Favorites</a>
+    <a href="profile.html">My Profile</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+<a href="login.html" id="loginLink">Login</a>
+    <a href="register.html" id="registerLink">Register</a>
+    <button class="link-btn hidden" id="logoutBtn">Logout</button>
+  </nav>
+  <div class="header-right">
+    <div class="auth-pill hidden" id="authPill">
+      <span class="auth-email" id="authEmail"></span>
+      <span class="auth-role" id="authRole"></span>
+    </div>
+    <button class="link-btn" id="themeToggle" type="button">☀️</button>
+  </div>
+</header>
+
+<main>
+  <section class="toolbar">
+    <input id="search" placeholder="Search by name" />
+    <input id="price" type="number" min="0" step="1" placeholder="Max price" />
+  </section>
+
+  <section id="menuContainer" class="products-grid"></section>
+
+  <section id="adminPanel" class="admin-panel">
+    <h3>Add new product</h3>
+    <form id="adminProductForm" class="form-card">
+      <input type="text" id="productName" placeholder="Product name" required>
+      <textarea id="productDescription" placeholder="Description" rows="3"></textarea>
+      <input type="number" id="productPrice" placeholder="Price" min="0" step="0.01" required>
+      <button class="btn" type="submit">Create product</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-note">Baked fresh daily for your sweetest moments.</div>
+  <div class="footer-meta">© 2026 Diana. All rights reserved.</div>
+</footer>
+
+<div id="flash" class="flash"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+

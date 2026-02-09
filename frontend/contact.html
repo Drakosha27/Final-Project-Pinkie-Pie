@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact - Pinkie Pie</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <div class="brand-mark">PP</div>
+    <div>
+      <div class="brand-title">Pinkie Pie Bakery</div>
+      <div class="brand-subtitle">Contact</div>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html" id="menuLink" class="hidden">Menu</a>
+    <a href="orders.html" id="ordersLink" class="hidden">My Orders</a>
+    <a href="admin.html" id="adminLink" class="hidden">Admin Panel</a>
+    <a href="favorites.html">Favorites</a>
+    <a href="profile.html">My Profile</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+<a href="login.html" id="loginLink">Login</a>
+    <a href="register.html" id="registerLink">Register</a>
+    <button class="link-btn hidden" id="logoutBtn">Logout</button>
+  </nav>
+  <div class="header-right">
+    <div class="auth-pill hidden" id="authPill">
+      <span class="auth-email" id="authEmail"></span>
+      <span class="auth-role" id="authRole"></span>
+    </div>
+    <button class="link-btn" id="themeToggle" type="button">вЂпёЏ</button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <h1>Contact us</h1>
+    <p class="muted">We answer quickly and carefully. Let's make something sweet together.</p>
+  </section>
+
+  <section class="contact-grid">
+    <form id="contactForm" class="form-card">
+      <h3>Send a message</h3>
+      <input type="text" id="contactName" placeholder="Your name" required>
+      <input type="email" id="contactEmail" placeholder="Email" required>
+      <textarea id="contactMessage" rows="4" placeholder="Message" required></textarea>
+      <button class="btn" type="submit">Send</button>
+    </form>
+    <div class="info-card">
+      <h3>Bakery details</h3>
+      <p class="muted">Open daily 8:00вЂ“20:00</p>
+      <p class="muted">Phone: +7 700 123 45 67</p>
+      <p class="muted">Address: Sweet Street 12, Almaty</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-note">Baked fresh daily for your sweetest moments.</div>
+  <div class="footer-meta">В© 2026 Diana. All rights reserved.</div>
+</footer>
+
+<div id="flash" class="flash"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
+
