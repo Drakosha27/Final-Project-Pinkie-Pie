@@ -12,7 +12,7 @@ function createProductCard(product){
 }
 
 async function loadProducts(){
-  const res = await fetch("http://localhost:5000/api/products");
+  const res = await fetch("https://final-project-pinkie-pie.onrender.com/api/products");
   const products = await res.json();
   const menuContainer = document.getElementById("menuContainer");
   menuContainer.innerHTML = "";
@@ -25,7 +25,7 @@ loadProducts();
 async function orderProduct(productId){
   const token = localStorage.getItem("token");
   if(!token){ alert("Please login first!"); window.location.href="login.html"; return; }
-  await fetch("http://localhost:5000/api/orders",{
+  await fetch("https://final-project-pinkie-pie.onrender.com/api/orders",{
     method:"POST",
     headers:{
       "Content-Type":"application/json",

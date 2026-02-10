@@ -164,7 +164,7 @@ The frontend currently uses a hardcoded API base URL in:
 - frontend/js/script.js
 
 Default:
-http://localhost:5000/api
+https://final-project-pinkie-pie.onrender.com/api
 
 If you change PORT, update `API_BASE` accordingly.
 
@@ -196,7 +196,7 @@ JWT_SECRET=your_secret_key
 npm start
 
 Server runs at:
-http://localhost:5000
+https://final-project-pinkie-pie.onrender.com
 
 ---
 

@@ -1,4 +1,4 @@
-﻿const API_BASE = "http://localhost:5000/api";
+﻿const API_BASE = "https://inspiring-malabi-bcc519.netlify.app/";
 
 const flash = document.getElementById("flash");
 
@@ -669,3 +669,4 @@ loadFavorites();
 setupFaq();
 setupProfile();
 setupContact();
+
