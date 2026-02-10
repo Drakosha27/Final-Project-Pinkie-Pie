@@ -1,4 +1,4 @@
-﻿const API_BASE = "https://inspiring-malabi-bcc519.netlify.app/";
+﻿const API_BASE = "https://final-project-pinkie-pie.onrender.com/api";
 
 const flash = document.getElementById("flash");
 
